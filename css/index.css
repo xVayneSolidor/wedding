@@ -57,6 +57,31 @@ button:hover {
     background-color: #45a049;
 }
 
+.lead b,
+.lead strong {
+  font-weight: 700;
+}
+
+.thanks-font {
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-size: 1.6em;   /* 🔑 esto es lo importante */
+  line-height: 1.2;
+}
+
+.ceremony-img {
+  max-width: 70%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* En pantallas grandes vuelve a tamaño normal */
+@media (min-width: 768px) {
+  .ceremony-img {
+    max-width: 100%;
+  }
+}
+
 /* 7e6d94 lila
 c198d2 lavander
 12326e azul real
