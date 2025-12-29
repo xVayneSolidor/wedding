@@ -1,0 +1,63 @@
+body {
+    background-color: #1A1A2E;
+    color: white;
+    font-family: "Cinzel", serif;;
+}
+.title-font {
+    font-family: "Great Vibes", cursive;
+}
+/*
+.attire{
+    border: 1px solid white;
+}*/
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+.wave img{
+    flex: 1;
+  }
+.heart {
+    font-size: 24px;
+    color: #FFD700;
+    margin: 0 10px;
+}
+svg {
+    display: block;
+}
+
+.player-container {
+    background: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+button:hover {
+    background-color: #45a049;
+}
+
+/* 7e6d94 lila
+c198d2 lavander
+12326e azul real
+275998 azul real */
