@@ -73,16 +73,20 @@ button:hover {
     font-weight: 400;
 }
 
+/* Mobile (default) */
 .ceremony-img {
-  max-width: 70%;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
   margin: 0 auto;
   display: block;
 }
 
-/* En pantallas grandes vuelve a tamaño normal */
+/* Tablet & desktop */
 @media (min-width: 768px) {
   .ceremony-img {
-    max-width: 100%;
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -107,11 +111,30 @@ button:hover {
   }
 }
 
+/* Mobile (default) */
 .color-circle {
-  width: 40px;
-  height: 40px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  margin: 0 auto 8px; /* center + space below */
+  margin: 0 auto 4px;
+}
+
+.color-label {
+  font-size: 0.7rem;
+  line-height: 1.1;
+}
+
+/* Tablet & up */
+@media (min-width: 576px) {
+  .color-circle {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+
+  .color-label {
+    font-size: 0.9rem;
+  }
 }
 
 .blush {
