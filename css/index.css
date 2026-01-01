@@ -69,6 +69,10 @@ button:hover {
   line-height: 1.2;
 }
 
+.actividades {
+    font-weight: 400;
+}
+
 .ceremony-img {
   max-width: 70%;
   margin: 0 auto;
@@ -80,6 +84,74 @@ button:hover {
   .ceremony-img {
     max-width: 100%;
   }
+}
+
+.map-container {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Proporción estándar */
+.map-container iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+}
+
+/* 📱 Móvil */
+@media (max-width: 576px) {
+  .map-container iframe {
+    height: 280px; /* aquí lo haces más pequeño */
+  }
+}
+
+.color-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 auto 8px; /* center + space below */
+}
+
+.blush {
+  background-color: #fbb964;
+}
+
+.peach {
+  background-color: #fdd0b1;
+}
+
+.mint {
+  background-color: #c4edbf;
+}
+
+.butter {
+  background-color: #f8f0c6;
+}
+
+.stone {
+  background-color: #7d93a3;
+}
+
+.olive {
+  background-color: #69735a;
+}
+
+.sea {
+  background-color: #94a8a9;
+}
+
+.teal {
+  background-color: #4d8ea2;
+}
+
+.khaki {
+  background-color: #ad937a;
+}
+
+.charcoal {
+  background-color: #545454;
 }
 
 /* 7e6d94 lila
