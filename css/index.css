@@ -177,6 +177,26 @@ button:hover {
   background-color: #545454;
 }
 
+.red {
+  background-color: #b33a3a;
+}
+
+.purple {
+  background-color: #7e6d94;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.white {
+  background-color: #ffffff;
+}
+
+.royal-blue {
+  background-color: #12326e;
+}
+
 /* 7e6d94 lila
 c198d2 lavander
 12326e azul real
