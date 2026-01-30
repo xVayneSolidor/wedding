@@ -3,6 +3,18 @@ body {
     color: white;
     font-family: "Cinzel", serif;;
 }
+
+/* Capa de imagen */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/wedding/assets/background.jpeg") center / cover no-repeat;
+  opacity: 0.18; /* 🔑 ajusta aquí */
+  pointer-events: none;
+  z-index: -1;
+}
+
 .title-font {
     font-family: "Great Vibes", cursive;
 }
@@ -191,6 +203,65 @@ button:hover {
 
 .royal-blue {
   background-color: #12326e;
+}
+
+.ghibli-btn {
+  display: inline-block;
+  padding: 14px 34px;
+  font-size: 1.2rem;
+  font-family: "Quicksand", sans-serif; /* o la que ya uses */
+  color: #49769F;
+
+  background: linear-gradient(
+    145deg,
+    #F9EFC7,
+    #B7BDF7
+  );
+
+  border-radius: 999px;
+  border: 2px solid rgba(73, 118, 159, 0.35);
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+  text-decoration: none;
+  transition: all 0.35s ease;
+  position: relative;
+}
+
+/* ✨ efecto hover */
+.ghibli-btn:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 14px 28px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  background: linear-gradient(
+    145deg,
+    #C3EDBF,
+    #B8DFE6
+  );
+}
+
+/* 🍃 brillo suave */
+.ghibli-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(255,255,255,0.35),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.ghibli-btn:hover::after {
+  opacity: 1;
 }
 
 /* 7e6d94 lila
