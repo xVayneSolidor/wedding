@@ -16,34 +16,38 @@
 <body>
     <!-- Primera seccion -->
     <div class="px-4 pt-5 my-5 text-center">
-        <h1 class="display-1 title-font">Glesanny & Irwin</h1>
-        <div class="mx-auto">
-          <p class="lead display-5 mb-3">Donde la magia se encuentra con la maravilla</p>
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead display-5 mb-3">10 - 10 - 2026</p>
-          <p class="lead display-5 mb-3">FALTAN</p>
-          <p class="display-4" id="clock"></p>
-        </div>
-        <div>
-          <div class="container px-5">
-            <img src="assets/us.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4 hero-img" alt="Us" loading="lazy">
-          </div>
-        </div>  
+      <h1 class="display-1 title-font">Glesanny & Irwin</h1>
+    
+      <div class="mx-auto">
+        <p class="lead display-5 mb-3">
+          Donde la magia se encuentra con la maravilla
+        </p>
+      </div>
+    
+      <div class="col-lg-6 mx-auto">
+        <p class="lead display-5 mb-3">10 - 10 - 2026</p>
+        <p class="lead display-5 mb-3">FALTAN</p>
+        <p class="display-4 reloj" id="clock"></p>
+      </div>
+    </div>
+    
+    <!-- 👇 IMAGEN FUERA DEL BLOQUE CON PADDING -->
+    <div class="hero-image-wrapper">
+      <img src="assets/us.jpeg" class="img-fluid border rounded-3 hero-img shadow-lg" alt="Us" loading="lazy">
     </div>
     <div class="divider">
-        <div class="wave">
-            <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
-                <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
-            </svg>
-        </div>
-        <div class="heart">♥</div>
-        <div class="wave">
-            <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
-                <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
-            </svg>
-        </div>
-    </div> 
+      <div class="wave">
+        <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
+          <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
+        </svg>
+      </div>
+      <div class="heart">♥</div>
+      <div class="wave">
+        <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
+          <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
+        </svg>
+      </div>
+    </div>
     <!-- Segunda seccion -->
     <div class="container col-xxl-8 px-4 py-2">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -107,17 +111,17 @@
     </div>
     <div class="divider">
       <div class="wave">
-          <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
-              <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
-          </svg>
+        <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
+          <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
+        </svg>
       </div>
       <div class="heart">♥</div>
       <div class="wave">
-          <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
-              <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
-          </svg>
+        <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
+          <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
+        </svg>
       </div>
-    </div> 
+    </div>
     <!-- Quinta secion -->
     <div class="px-4 text-center">
       <div class="container">
@@ -127,8 +131,29 @@
           <p class="lead">Formal - Colores Pasteles</p>
         </div>
         <br>
-        <p>Chicas: vestido largo, tacones y/o plataformas</p>
-        <p>Chicos: camisa y pantalón de tela y zapatos</p>
+        <div class="container">
+          <div class="row align-items-center text-center">
+    
+            <!-- Ellas -->
+            <div class="col-6 d-flex flex-column align-items-center">
+              <img src="/assets/ellas.png" alt="ellas" class="img-fluid mb-2" style="max-width: 120px;">
+              <p class="mb-0">Chicas: vestido largo, tacones y/o plataformas</p>
+            </div>
+    
+            <!-- Divider -->
+            <div class="d-none d-md-flex col-md-1 justify-content-center">
+              <span style="font-size: 2rem;">|</span>
+            </div>
+    
+            <!-- Ellos -->
+            <div class="col-6 d-flex flex-column align-items-center">
+              <img src="/assets/ellos.png" alt="ellos" class="img-fluid mb-2" style="max-width: 120px;">
+              <p class="mb-0">Chicos: camisa y pantalón de tela y zapatos</p>
+            </div>
+    
+          </div>
+        </div>
+        
         <div class="border rounded palette-box text-dark mb-3">
           <p class="lead">Colores</p>
           <div class="container">
@@ -151,12 +176,6 @@
                     <div class="col">
                       <div class="color-circle stone"></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm mt-4 mt-md-0">              
-                <div class="container">
-                  <div class="row">
                     <div class="col text-center">
                       <div class="color-circle olive"></div>
                     </div>
@@ -174,7 +193,7 @@
                     </div>
                   </div>
                 </div>
-              </div>  
+              </div>
             </div>
           </div>
           <br>

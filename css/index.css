@@ -4,6 +4,11 @@ body {
     font-family: "Cinzel", serif;;
 }
 
+.reloj {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
 /* Capa de imagen */
 body::before {
   content: "";
@@ -15,15 +20,33 @@ body::before {
   z-index: -1;
 }
 
-/* 📱 Móvil */
+.hero-image-wrapper {
+  max-width: 90%;
+  margin: 2rem auto;
+}
+
+/* 📱 Mobile */
 .hero-img {
   width: 100%;
+  height: auto;
+}
+
+/* 📱 Mobile – que se sienta grande pero no exagerada */
+@media (max-width: 576px) {
+  .hero-image-wrapper {
+    max-width: 92%;
+  }
+
+  .hero-img {
+    max-height: 320px;
+    object-fit: cover;
+  }
 }
 
 /* 🖥 Desktop */
 @media (min-width: 768px) {
-  .hero-img {
-    width: auto; /* vuelve al comportamiento normal */
+  .hero-image-wrapper {
+    max-width: 700px;
   }
 }
 
@@ -49,6 +72,25 @@ body::before {
     justify-content: center;
     margin: 40px 0;
   }
+
+.dress-img {
+  max-width: 120px;
+  width: 100%;
+}
+
+.divider {
+  font-size: 2.5rem;
+  color: rgba(0,0,0,0.4);
+  line-height: 1;
+}
+
+/* 📱 Mobile refinado */
+@media (max-width: 768px) {
+  .dress-img {
+    max-width: 100px;
+  }
+}
+
 .wave img{
     flex: 1;
   }
