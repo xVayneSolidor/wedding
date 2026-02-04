@@ -15,6 +15,27 @@ body::before {
   z-index: -1;
 }
 
+/* 📱 Móvil */
+.hero-img {
+  width: 100%;
+}
+
+/* 🖥 Desktop */
+@media (min-width: 768px) {
+  .hero-img {
+    width: auto; /* vuelve al comportamiento normal */
+  }
+}
+
+.palette-box {
+  background: linear-gradient(
+    180deg,
+    #ffffff,
+    #f8f9fa
+  );
+  padding: 2rem 1.5rem;
+}
+
 .title-font {
     font-family: "Great Vibes", cursive;
 }
