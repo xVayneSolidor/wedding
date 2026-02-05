@@ -24,10 +24,29 @@
         </p>
       </div>
     
-      <div class="col-lg-6 mx-auto">
-        <p class="lead display-5 mb-3">10 - 10 - 2026</p>
-        <p class="lead display-5 mb-3">FALTAN</p>
-        <p class="display-4 reloj" id="clock"></p>
+      <div class="date-block">
+        <div class="date-month">OCTOBER</div>
+        <div class="date-row">
+          <div class="date-side">
+            <span class="line"></span>
+            <span class="date-text">SATURDAY</span>
+            <span class="line"></span>
+          </div>
+    
+          <div class="date-day">10</div>
+    
+          <div class="date-side">
+            <span class="line"></span>
+            <span class="date-text">2026</span>
+            <span class="line"></span>
+          </div>
+        </div>
+    
+        <!-- ⏳ CONTADOR -->
+        <div class="countdown">
+          <p class="countdown-label faltan lead">FALTAN</p>
+          <p class="countdown-clock reloj" id="clock"></p>
+        </div>
       </div>
     </div>
     
@@ -49,14 +68,14 @@
       </div>
     </div>
     <!-- Segunda seccion -->
-    <div class="container col-xxl-8 px-4 py-2">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-10 col-sm-8 col-lg-6">
-            <img src="assets/wood.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-          </div>
+    <div class="container col-xxl-8 px-4">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
           <div class="col-lg-6">
             <h1 class="display-5 lh-1 mb-3">Érase una vez, en un mundo de magia y sueños...</h1>
             <p class="lead">Dos almas se encuentran bajo el hechizo del amor y deciden hacer sus sueños realidad.</p>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="assets/wood.jpeg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
           </div>
         </div>
       </div>    
@@ -75,14 +94,15 @@
     </div> 
     <!-- Tercera seccion -->
     <div class="container col-xxl-8 px-4">
-        <div class="row flex-lg-row-reverse align-items-center g-5 text-center">
+        <div class="row align-items-center g-5 text-center justify-content-center">
           <div class="col-lg-6">
-            <h1 class="display-5 lh-1">Entra en nuestro cuento, donde cada momento brilla con un toque de alegría</h1>
+            <h1 class="display-5 lh-1">Entra en nuestro cuento, </h1>
+            <p class="lead">donde cada momento brilla con un toque de alegría.</p>
           </div>
         </div>
     </div>
     <div class="hero-image-wrapper">
-        <img src="assets/union.jpeg" class="img-fluid border rounded-3 shadow-lg hero-img" alt="Bootstrap Themes" loading="lazy">
+        <img src="assets/union.jpeg" class="img-fluid border rounded-3 shadow-lg hero-img" alt="union" loading="lazy">
     </div>
     <div class="divider">
         <div class="wave">
@@ -98,7 +118,7 @@
         </div>
     </div> 
     <!-- Cuarta seccion -->
-    <div class="px-4 pt-5 my-5 text-center">
+    <div class="px-4 my-5 text-center">
       <div class="container">
         <h1 class="display-4 mb-5">Únete a nuestro viaje encantado hacia el para siempre</h1>
       </div>
@@ -117,44 +137,39 @@
         <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
           <path d="M0 10 Q 25 0 50 10 T 100 10" stroke="gray" stroke-width="2" fill="none" />
         </svg>
-      </div>
-    </div>
-    <!-- Quinta secion -->
-    <div class="px-4 text-center">
-      <div class="container">
-        <h2 class="display-4">Código de vestimenta</h2>
-        <br>
-        <br>
-        <div class="container">
-          <div class="row align-items-center text-center">
-    
-            <!-- Ellas -->
-            <div class="col-6 d-flex flex-column align-items-center">
-              <img src="/assets/ellas.png" alt="ellas" class="img-fluid mb-2" style="max-width: 120px;">
-              <p class="mb-0">Chicas: vestido largo, tacones y/o plataformas</p>
-            </div>
-    
-            <!-- Divider -->
-            <div class="d-none d-md-flex col-md-1 justify-content-center">
-              <span style="font-size: 2rem;">|</span>
-            </div>
-    
-            <!-- Ellos -->
-            <div class="col-6 d-flex flex-column align-items-center">
-              <img src="/assets/ellos.png" alt="ellos" class="img-fluid mb-2" style="max-width: 120px;">
-              <br>
-              <p class="mb-0">Chicos: camisa y pantalón de tela y zapatos</p>
-            </div>
-    
-          </div>
         </div>
+        </div>
+        <!-- Quinta secion -->
+        <div class="px-4 text-center">
+          <div class="container">
+            <div class="row align-items-center text-center justify-content-center flex-nowrap">
+        
+              <!-- Ellas -->
+              <div class="col-6 col-md-5 d-flex flex-column align-items-center">
+                <img src="assets/ellas.png" alt="ellas" class="img-fluid mb-2" style="max-width: 120px;">
+                <p class="mb-0">Chicas: vestido largo, tacones y/o plataformas</p>
+              </div>
+        
+              <!-- Divider -->
+              <div class="col-auto d-flex justify-content-center px-3">
+                <div class="divider-vertical"></div>
+              </div>
+        
+              <!-- Ellos -->
+              <div class="col-6 col-md-5 d-flex flex-column align-items-center">
+                <img src="assets/ellos.png" alt="ellos" class="img-fluid mb-2" style="max-width: 120px;">
+                <p class="mb-0">Chicos: camisa y pantalón de tela y zapatos</p>
+              </div>
+        
+            </div>
+          </div>
         <br>
         <br>
         <div class="border rounded palette-box text-dark mb-3">
-          <p class="lead">Colores</p>
+          <p class="lead">Colores sugeridos</p>
           <div class="container">
             <div class="row">
-              <div class="col-sm">       
+              <div class="col-sm">
                 <div class="container">
                   <div class="row">
                     <div class="col">
@@ -171,9 +186,6 @@
                     </div>
                     <div class="col">
                       <div class="color-circle stone"></div>
-                    </div>
-                    <div class="col text-center">
-                      <div class="color-circle olive"></div>
                     </div>
                     <div class="col">
                       <div class="color-circle sea"></div>
@@ -193,14 +205,10 @@
             </div>
           </div>
           <br>
-          
+          <br>
+            <p class="lead"><b>Colores no permitidos</b></p>
+            <p>Blanco y similares, azul real y similares, morado y similares, rojo o negro</p>
         </div>
-        <div class="container">
-          <p class="lead">Colores no permitidos</p>
-          <p>Blanco y similares, azul real y similares, morado y similares, rojo o negro</p>
-        </div>
-        <br>
-        <br>
         <div class="divider">
           <div class="wave">
             <svg viewBox="0 0 100 20" preserveAspectRatio="none" style="width: 100%; height: 20px;">
@@ -280,25 +288,23 @@
     </div>
   </div> 
   <div class="container col-xxl-8 py-3">
-  <div class="row flex-lg-row-reverse align-items-center justify-content-center text-center g-5">
-    
-    <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-      <img src="assets/Itinerario de actividades.png"
-           class="img-fluid mb-4 ceremony-img"
-           alt="Itinerario"
-           loading="lazy">
+    <div class="row flex-lg-row-reverse align-items-center justify-content-center text-center g-5">
+  
+      <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+        <img src="assets/Itinerario de actividades.png" class="img-fluid mb-4 ceremony-img" alt="Itinerario"
+          loading="lazy">
+      </div>
+  
+      <div class="col-lg-6 mx-auto">
+        <h1 class="display-5 lh-1">Lista de Regalos</h1>
+        <p class="lead">
+          Nuestro mejor hechizo ya es tenerte aquí.
+          Si deseas regalarnos algo más, puedes sumar tu granito de magia
+          a nuestra lista de deseos para este nuevo comienzo.
+        </p>
+      </div>
+  
     </div>
-
-    <div class="col-lg-6 mx-auto">
-      <h1 class="display-5 lh-1">Lista de Regalos</h1>
-      <p class="lead">
-        Nuestro mejor hechizo ya es tenerte aquí.
-        Si deseas regalarnos algo más, puedes sumar tu granito de magia
-        a nuestra lista de deseos para este nuevo comienzo.
-      </p>
-    </div>
-
-  </div>
 </div>
   <div class="divider">
     <div class="wave">
@@ -350,6 +356,6 @@
         </iframe>
       </div>
     </div>
-    <!-- <audio id="bgMusic" src="assets/Sparkle.mp3" loop></audio> !-->
+    <audio id="bgMusic" src="assets/Sparkle.mp3" loop></audio>
 </body>
 </html>
