@@ -185,7 +185,7 @@ body::before {
 /* 👇 MOBILE */
 @media (max-width: 768px) {
   .palette-box {
-    padding: 60px 30px; /* menos padding lateral */
+    padding: 30px 15px; /* menos padding lateral */
   }
 
   .color-circle {
@@ -299,7 +299,7 @@ button:hover {
 /* Tablet & desktop */
 @media (min-width: 768px) {
   .ceremony-img {
-    width: 75%;
+    width: 100%;
     height: auto;
   }
 }
