@@ -158,12 +158,19 @@ body::before {
 }
 
 .palette-box {
-  background: linear-gradient(
-    180deg,
-    #ffffff,
-    #f8f9fa
-  );
-  padding: 2rem 1.5rem;
+  background:
+    linear-gradient(
+      rgba(255, 248, 230, 0.85),
+      rgba(255, 248, 230, 0.85)
+    ),
+    url("/wedding/assets/papiro.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  border: 1px solid rgba(120, 100, 60, 0.3);
+  border-radius: 12px;
 }
 
 .title-font {
@@ -320,31 +327,31 @@ button:hover {
 }
 
 .blush {
-  background-color: #fbb964;
+  background-color: #ad937a;
 }
 
 .peach {
-  background-color: #fdd0b1;
+  background-color: #2c7a85;
 }
 
 .mint {
-  background-color: #c4edbf;
+  background-color: #fbb9c4;
 }
 
 .stone {
-  background-color: #7d93a3;
+  background-color: #aa4d25;
 }
 
 .olive {
-  background-color: #69735a;
+  background-color: #1b4d3a;
 }
 
 .sea {
-  background-color: #94a8a9;
+  background-color: #69735a;
 }
 
 .teal {
-  background-color: #4d8ea2;
+  background-color: #7d9ea3;
 }
 
 .khaki {
