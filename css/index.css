@@ -361,10 +361,16 @@ button:hover {
 @media (max-width: 768px) {
   .papiro-img {
     content: url("../assets/papiro\ 2.png");
+    max-width: 100%;
+    height: auto;
   }
   .color-palette {
-    gap: 30px;
-    max-width: 250px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    max-width: 220px;
+    margin: 0 auto;
+    justify-items: center;
   }
   .color-circle {
     width: 30px;
@@ -373,6 +379,14 @@ button:hover {
 
   .color-label {
     font-size: 0.9rem;
+  }
+  .palette-content .lead {
+    font-size: 1rem;
+  }
+
+  .palette-content p,
+  .palette-content li {
+    font-size: 0.85rem;
   }
 }
 
