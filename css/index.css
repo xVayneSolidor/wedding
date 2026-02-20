@@ -157,20 +157,45 @@ body::before {
   }
 }
 
+.palette-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .palette-box {
-  background:
-    linear-gradient(
-      rgba(255, 248, 230, 0.85),
-      rgba(255, 248, 230, 0.85)
-    ),
-    url("/wedding/assets/papiro.png");
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+}
 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.papiro-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  border: 1px solid rgba(120, 100, 60, 0.3);
-  border-radius: 12px;
+.palette-content {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+}
+
+/* 👇 MOBILE */
+@media (max-width: 768px) {
+  .palette-box {
+    padding: 60px 30px; /* menos padding lateral */
+  }
+
+  .color-circle {
+    width: 45px;
+    height: 45px; /* círculos más pequeños */
+  }
+
+  .color-palette {
+    gap: 12px; /* menos separación */
+  }
 }
 
 .title-font {
@@ -293,6 +318,21 @@ button:hover {
   border: 0;
 }
 
+.color-palette {
+  display: flex;
+  justify-content: center;   /* 👈 centra el grupo */
+  flex-wrap: wrap;
+  gap: 30px;                 /* espacio entre círculos */
+  max-width: 300px;          /* 👈 limita el ancho */
+  margin: 0 auto;            /* centra el bloque */
+}
+
+.color-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
 /* 📱 Móvil */
 @media (max-width: 576px) {
   .map-container iframe {
@@ -311,6 +351,29 @@ button:hover {
 .color-label {
   font-size: 0.7rem;
   line-height: 1.1;
+}
+
+.papiro-img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .papiro-img {
+    content: url("../assets/papiro\ 2.png");
+  }
+  .color-palette {
+    gap: 30px;
+    max-width: 250px;
+  }
+  .color-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .color-label {
+    font-size: 0.9rem;
+  }
 }
 
 /* Tablet & up */
