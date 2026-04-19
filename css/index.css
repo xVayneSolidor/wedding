@@ -290,16 +290,16 @@ button:hover {
 /* Mobile (default) */
 .ceremony-img {
   width: 50%;
-  height: auto;
-  object-fit: cover;
-  margin: 0 auto;
+  aspect-ratio: 1 / 1;   /* 🔥 clave */
+  object-fit: contain;   /* mantiene proporción */
   display: block;
+  margin: 0 auto;
 }
 
 /* Tablet & desktop */
 @media (min-width: 768px) {
   .ceremony-img {
-    width: 100%;
+    width: 45%;
     height: auto;
   }
 }
